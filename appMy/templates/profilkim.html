@@ -1,0 +1,10 @@
+
+{% load static %}   
+
+
+{% for profilkim in profilkim %} 
+{{ profilkim }},{{profilkim.id}},{{ request.user }}
+
+{% endfor %}
+
+

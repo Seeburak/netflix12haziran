@@ -1,0 +1,18 @@
+{% load static %}   
+
+
+<div class="row mt-5">
+    <h3 class="text-light"> Gündemdeki Diziler</h3>
+    {% for filmler in filmler  %} 
+    <div class="col-md-2 col-4 mt-1">
+        <p>{{ filmler.title }}</p>
+        <img src="{{ filmler.image.url }}" class="card-img-top w-100" style="height: 186px; object-fit: cover;" alt="">
+                                
+    </div>
+    {% endfor %}    
+</div>
+    
+
+    
+
+    

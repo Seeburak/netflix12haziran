@@ -1,0 +1,31 @@
+{% extends 'browse-index.html' %}
+{% load static %}
+
+
+{% block secimgelsin %}  
+
+
+    {% for filmler in filmler %} 
+
+
+        <div class="card" style="width: 150px;">
+            <img src="{{ filmler.image.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ filmler.title }}</h5>
+            </div>
+        </div>
+
+    {% endfor %} 
+
+{% endblock secimgelsin %}
+  
+
+
+
+
+
+
+
+
+
+    

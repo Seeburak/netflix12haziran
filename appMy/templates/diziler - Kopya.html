@@ -1,0 +1,23 @@
+
+{% extends 'browse-index.html' %}
+{% load static %}   
+
+
+{% block secimgelsin %}  
+
+    {% for diziler in diziler  %} 
+
+    <div class="card" style="width: 150px;">
+        <img src="{{ diziler.image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ diziler.title }}</h5>
+        </div>
+    </div>
+    {% endfor %} 
+    
+{% endblock secimgelsin %}
+
+
+
+
+    

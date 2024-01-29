@@ -1,0 +1,27 @@
+
+{% extends 'browse-index.html' %}
+{% load static %}   
+
+
+{% block secimgelsin %}  
+
+<h1 style="color: aliceblue;">En Yeni:</h1>
+
+{% for filmdizi in filmdizi  %} 
+
+<div class="card" style="width: 150px;">
+    <img src="{{ filmdizi.image.url }}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ filmdizi.title }}</h5>
+    </div>
+</div>
+
+{% endfor %} 
+
+
+{% endblock secimgelsin %}
+
+
+
+
+    

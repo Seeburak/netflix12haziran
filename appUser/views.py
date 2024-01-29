@@ -269,7 +269,7 @@ def filmler(request):
 def diziler(request):
 
    context={
-        "diziler":Video.objects.filter(Category=2)
+        "diziler":Video.objects.filter(Category=2)  
    }
    return render(request,"diziler.html",context)
  
@@ -280,4 +280,3 @@ def filmdizi(request):
     }
     return render(request,"filmdizi.html",context)
  
-   
